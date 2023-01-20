@@ -1,0 +1,426 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-primary: rgb(1, 7, 116);
+    --heading-color: rgb(4, 2, 13);
+    --bg-grey: rgba(230, 228, 228, 0.399);
+    --pink: rgba(255, 156, 173, 0.628);
+    --blue: rgba(236, 236, 253, 0.855);
+}
+
+.main-heading {
+    margin: 25px 0;
+    font-weight: 500;
+    font-size: 3rem;
+    word-spacing: 1rem;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--heading-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--heading-color);
+}
+
+/* ==================== nav bar ============================== */
+.navbar-bg {
+    position: relative;
+    z-index: 99;
+    font-size: 2rem;
+    background-color: var(--bg-grey);
+}
+
+.navbar-bg .navbar-brand {
+    font-size: 2.5rem;
+}
+
+.navbar ul li {
+    padding: 0 1rem;
+    font-weight: 500;
+}
+
+.navbar ul li a:hover {
+    color: var(--bg-primary) !important;
+}
+
+.btn-style {
+    width: 9rem;
+    height: 3rem;
+    background-color: var(--bg-primary);
+    text-transform: capitalize;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    margin: 0 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.btn-style:hover {
+    border: 1px solid var(--bg-primary);
+    background-color: transparent;
+    color: var(--bg-primary);
+}
+
+.btn-style-login {
+    border: 1px solid var(--bg-primary);
+    background-color: transparent;
+    color: var(--bg-primary);
+}
+
+.btn-style-login:hover {
+    background-color: var(--bg-primary);
+    text-transform: capitalize;
+    color: white;
+}
+
+/*==================== Hero section ==============================*/
+header {
+    margin-top: 1rem;
+    height: 70vh;
+}
+
+.header-left-side h1 {
+    font-size: 5.2rem;
+    font-weight: 700;
+}
+
+.main-hero-para {
+    font-size: 1.5rem;
+    font-weight: lighter;
+    margin: 1rem 0;
+}
+
+.header-left-side h3 {
+    font-weight: 400;
+}
+
+.header-left-side .priem-input {
+    padding: 5px 5px 5px 0;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    position: relative;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.251);
+}
+
+.priem-input input {
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    padding: 0 2px 0 10px;
+}
+
+.priem-input button {
+    border: none;
+    background-color: var(--bg-primary);
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: white;
+}
+
+/* =================== How does it works ===================*/
+.work-container {
+    background-color: var(--blue);
+    padding: 3rem;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 1px 7px rgba(0, 0, 0, 0.251);
+}
+
+.work-container i,
+.services-main-container i {
+    color: var(--bg-primary);
+    margin-bottom: 5px;
+    background-color: var(--pink);
+    padding: 1.5rem;
+    font-size: 3rem;
+    border-radius: 50%;
+}
+
+.work-container-subdiv {
+    padding: 0 1.5rem;
+}
+
+/*============================= over services =========================*/
+.our-services {
+    margin-top: 5rem;
+}
+
+.mini-title {
+    font-weight: normal;
+    margin: 3rem;
+    font-size: 2rem;
+}
+
+.our-services img {
+    width: 450px;
+    margin-top: 8rem;
+}
+
+.our-services-list button {
+    width: 100px;
+}
+
+.our-services-info {
+    margin-top: 3rem;
+}
+
+.our-services-info .our-services-no {
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid var(--bg-primary);
+    font-size: 1.8rem;
+    color: var(--bg-primary);
+}
+
+.our-services-data {
+    padding-left: 2rem;
+}
+
+/* ======================== services section =======================*/
+.services-main-container .row {
+    margin: 4rem 0;
+}
+
+.services-container .work-container-subdiv {
+    cursor: pointer;
+    margin: 0 1rem;
+    border: 1px solid rgba(247, 212, 244, 0.433);
+    width: 350px;
+    margin-top: 3rem;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.services-container .work-container-subdiv:hover {
+    background-color: rgba(247, 212, 244, 0.433);
+}
+
+.work-container-subdiv:hover>i {
+    background-color: white;
+}
+
+/* =================== contact form =======================*/
+.contactus-section {
+    margin: 10rem;
+    margin-left: 15rem;
+}
+
+.contect-right-side {
+    margin-top: 13rem;
+    margin-left: 15rem;
+}
+
+.contact-input-field {
+    margin-bottom: 2rem;
+}
+
+.form-control {
+    height: 3.5rem;
+    font-size: 1.5rem;
+}
+
+.form-check-input {
+    width: 2rem;
+    height: 2rem;
+}
+
+/* ======================= footer ========================*/
+footer {
+    padding: 5rem;
+    background-color: #182334;
+    color: #fff;
+}
+
+footer h2 {
+    color: rgb(243, 219, 219);
+}
+
+footer li {
+    list-style: none;
+    font-size: 1.7rem;
+    margin: 1rem 0;
+}
+
+.s-link {
+    font-size: 3rem;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: var(--bg-grey);
+    border-radius: 50%;
+    color: var(--bg-primary);
+}
+
+footer li a {
+    color: #fff;
+}
+
+footer li a:hover {
+    color: var(--bg-primary);
+}
+
+footer .main-hero-para {
+    margin-bottom: -30px;
+}
+
+/* =============== error page not found =============  */
+.not_found404 h1 {
+    font-size: 30rem;
+    color: var(--bg-grey);
+}
+
+.not_found404 h2 {
+    font-size: 5rem;
+    color: var(--bg-primary);
+}
+
+.not_found404 P {
+    font-size: 2rem;
+}
+
+
+/* ====================reponsive====================== */
+@media (max-width:1350px) {
+    header {
+        height: 70vh;
+    }
+
+    .contect-left-side {
+        width: 200% !important;
+    }
+}
+
+@media (max-width:1200px) {
+    .our-services img {
+        margin-top: 14rem;
+        width: 350px;
+    }
+}
+
+@media (max-width:1180px) {
+    .services-container .work-container-subdiv {
+        margin: 1rem 2rem;
+        width: 400px;
+    }
+
+    .our-services img {
+        width: 400px;
+    }
+}
+
+@media (max-width:980px) {
+    .our-services img {
+        margin-top: 2rem;
+        margin-left: 5rem;
+        width: 450px;
+    }
+
+    .contactus-section {
+        overflow-x: hidden;
+    }
+
+    #contect-flex {
+        flex-direction: column;
+        width: 1213px;
+        gap: 0rem !important;
+    }
+
+    .contect-left-side {
+        margin-left: 2rem;
+    }
+
+    .services-container .work-container-subdiv {
+        margin: 0.5rem;
+        width: 330px;
+    }
+
+    .contect-right-side {
+        margin-top: 1rem;
+        margin-left: 0rem;
+    }
+}
+
+@media (max-width:768px) {
+    .our-services {
+        margin-top: -4rem;
+    }
+
+    .work-container {
+        margin-top: 27rem !important;
+    }
+
+    .main-hero-container div {
+        flex-wrap: wrap-reverse;
+    }
+
+    .main-hero-container div img {
+        max-width: 409px !important;
+    }
+        .services-container .work-container-subdiv{
+        width: 400px;
+        margin-left: 5rem;
+        margin-top: 1.5rem;
+    }
+    .contactus-left-side figure img{
+        max-width: 40% !important;
+    }
+    .contect-right-side {
+            margin-top: 1rem;
+            margin-left: 0rem;
+            width: 500px;
+        }
+}
+@media (max-width:700px){
+    .our-services-list{
+        margin-top: 5rem;
+
+    }
+    .contect-right-side {
+            width: 360px;
+            margin-left: 0rem;
+        }
+        .contactus-section {
+            overflow-x: hidden !important;
+        }
+        .contactus-left-side figure img {
+            max-width: 30% !important;
+        }
+}
+@media (max-width:600px){
+    .our-services img {
+            margin-top: 2rem;
+            margin-left: 1rem;
+            width: 300px;
+        }
+                .services-container .work-container-subdiv {
+                    width: 400px;
+                    margin-left: 1rem;
+                    margin-top: 1.5rem;
+                }
+        .work-container {
+            margin-top: 22rem !important;
+            width: 320px;
+        }
+        .contactus-section{
+            margin: 0;
+            margin-bottom: 1rem;
+        }
+}
